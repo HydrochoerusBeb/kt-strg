@@ -17,7 +17,7 @@ function updateTable() {
         if(key === 'IsThisFirstTime_Log_From_LiveServer'){
             continue
         }
-        newTable += `<tr><td>${key}</td><td>${currentStorage.getItem(key)}</td><td class="remove-item" id="deleteSomeItem">❌</td></tr>`
+        newTable += `<tr><td>${key}</td><td>${currentStorage.getItem(key)}</td><td class="remove-item" id="deleteSomeItem">X</td></tr>`
     }
     table.lastChild.previousSibling.innerHTML = newTable
 
